@@ -42,7 +42,9 @@ Funciones 2 -  Crea una funcion llamada "calculateDogAge" que:
 */
 
 			// CREA TU FUNCION calculateDogAge aqui:
-
+			const calculateDogAge = (edad) => {
+				console.log(`Tu perro tiene ${edad * 7} años perro.`);
+			};
 			/*
 
 ### Funciones 3 - Crea 2 funciones. Una llamada celsiusToFahrenheit que:
@@ -65,6 +67,15 @@ fahrenheitToCelsius(95) --> 35
 */
 
 			// CREA TUS FUNCIONES  aqui:
+			const celsiusToFahrenheit = (temp) => {
+				let res = (temp * 9) / 5 + 32;
+				console.log(res);
+			};
+
+			const fahrenheitToCelsius = (temp) => {
+				let res = ((temp - 32) * 5) / 9;
+				console.log(res);
+			};
 
 			/*  OBJETOS 
 
@@ -79,8 +90,20 @@ B) Crea 3 objectos  con diferentes valores.
 
 C) Con un console.log escribe el nombre del primer objeto, el color del segundo, y la raza del tercero. Lo puedes hacer en una sola línea o en 3 lineas aparte. 
 
-
 */
+
+			const Perro = (nombre, color, raza) => {
+				let perro = {
+					Nombre: nombre,
+					Color: color,
+					Raza: raza,
+				};
+				return perro;
+			};
+
+			let perro1 = Perro("Alek", "Negro", "Pug");
+			let perro2 = Perro("Camila", "Dorado", "Shiba Inu");
+			let perro3 = Perro("Karlo", "Gris", "Labrador");
 
 			/***
 			 *
@@ -98,6 +121,10 @@ C) Con un console.log escribe el nombre del primer objeto, el color del segundo,
 			 *        PRUEBA TUS OBJETOS AQUI
 			 *
 			 ***/
+
+			console.log(`Nombre del primer objeto: ${perro1.Nombre}`);
+			console.log(`Color del segundo objeto: ${perro2.Color}`);
+			console.log(`Raza del tercer objeto: ${perro3.Raza}`);
 		</script>
 	</head>
 

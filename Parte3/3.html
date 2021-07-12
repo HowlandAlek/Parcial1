@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
 
+		<script>
+			let nombres = [
+				"Jorge",
+				"Isabel",
+				"Juan",
+				"Pedro",
+				"Karina",
+				"Jose",
+				"Arturo",
+				"Rogelio",
+				"Bertha",
+			];
 
-
-<script>
-
-let nombres  = ['Jorge','Isabel','Juan','Pedro','Karina','Jose','Arturo','Rogelio','Bertha'];
-
-
-/*
+			/*
 
 Funciones 1 -  Crea una funcion llamada "mayusculas" que:
 - reciba como argumento el arreglo "nombres" y convierta todos los nombres a mayusula.
 - Los debe escribir en la consola convertidos.
 */
 
-// CREA TU FUNCION MAYUSCULAS aqui:
+			// CREA TU FUNCION MAYUSCULAS aqui:
+			const mayusculas = (arr) => {
+				nombres.forEach((elem) => {
+					console.log(elem.toUpperCase());
+				});
+			};
 
-
-
-
-/*
+			/*
 Funciones 2 -  Crea una funcion llamada "calculateDogAge" que: 
 
 - reciba como argumento le edad del perro.
@@ -33,13 +41,9 @@ Funciones 2 -  Crea una funcion llamada "calculateDogAge" que:
 
 */
 
-// CREA TU FUNCION calculateDogAge aqui:
+			// CREA TU FUNCION calculateDogAge aqui:
 
-
-
-
-
-/*
+			/*
 
 ### Funciones 3 - Crea 2 funciones. Una llamada celsiusToFahrenheit que:
 
@@ -60,17 +64,9 @@ fahrenheitToCelsius(95) --> 35
 
 */
 
+			// CREA TUS FUNCIONES  aqui:
 
-
-
-// CREA TUS FUNCIONES  aqui:
-
-
-
-
-
-
-/*  OBJETOS 
+			/*  OBJETOS 
 
 A) Define un objeto tipo "Perro" que reciba 3 parametros
 
@@ -86,39 +82,24 @@ C) Con un console.log escribe el nombre del primer objeto, el color del segundo,
 
 */
 
+			/***
+			 *
+			 *        PRUEBA TUS FUNCIONES
+			 *
+			 ***/
 
+			mayusculas(nombres);
+			calculateDogAge(4);
+			celsiusToFahrenheit(35);
+			fahrenheitToCelsius(95);
 
-/***
- * 
- *        PRUEBA TUS FUNCIONES
- * 
- ***/
+			/***
+			 *
+			 *        PRUEBA TUS OBJETOS AQUI
+			 *
+			 ***/
+		</script>
+	</head>
 
-
-mayusculas(nombres);
-calculateDogAge(4);
-celsiusToFahrenheit(35)
-fahrenheitToCelsius(95)
-
-
-
-
-
-/***
- * 
- *        PRUEBA TUS OBJETOS AQUI
- * 
- ***/
-
-
-</script>
-
-</head>
-
-<body>
-
-
-
-</body>
-
+	<body></body>
 </html>

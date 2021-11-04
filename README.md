@@ -19,7 +19,6 @@ This is an exam for a basic web development course.
 - HTML
 - CSS
 - JavaScript
-- Node JS
 
 
 ## Status

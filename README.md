@@ -4,7 +4,7 @@
 
 ## General info
 
-This is an exam for a basic web development course.
+This is an exam for a basic web development university course.
 
 #### Project Objectives
 
